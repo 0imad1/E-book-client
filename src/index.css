@@ -1,0 +1,610 @@
+body {
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+.card {
+  opacity: 0.9;
+}
+
+/* Button Styling */
+.button {
+  background-color: #1D3557; /* Deep Navy Blue */
+  color: #FFFFFF; /* White */
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.button:hover {
+  background-color: #00B4D8; /* Vivid Cyan on hover */
+  color: #000000; /* Black text on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Optional: Button Active/Focus Effect */
+.button:active,
+.button:focus {
+  outline: 2px solid #E5E5E5; /* Light Grey outline on focus */
+}
+
+/* BookCard Text Styling */
+.card-title.hotel-color {
+  color: #333333; /* Charcoal Gray for Book Name */
+  font-weight: bold;
+}
+
+.card-title.book-type {
+  color: #E8BF58; /* Golden Yellow for Book Type */
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.card-title.book-size {
+  color: #E8BF58; /* Golden Yellow for Book Type */
+  font-style: italic;
+}
+
+/* Additional Styling for Card Text */
+.card-text {
+  color: #555; /* Grey for additional book info */
+  font-family: 'Arial', sans-serif;
+  line-height: 1.5;
+}
+/* book details*/
+.book-details-container {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.book-image-container {
+  flex: 1;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center; /* Center the image */
+}
+
+.book-image {
+  width: 100%;
+  height: auto;
+  max-width: 300px; /* Adjusted max width */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.book-info-container {
+  
+  flex: 2;
+  display: flex;
+  flex-direction: column; /* Arrange text vertically */
+  justify-content: flex-start; /* Align items to the start */
+}
+
+.book-title {
+  margin-left: 200px;
+  margin-top: 20px; /* Space below title */
+  color: #1D3557; /* Title color */
+  text-align: left; /* Align text to the left */
+  font-size: 2rem; /* Larger title size */
+  font-weight: bold; /* Bold title */
+}
+
+.book-info {
+  margin-top: 100px; /* Space above info */
+}
+
+.book-info-container p {
+  margin-bottom: 5px; /* Space between paragraphs */
+  color: #1D3557; /* Text color */
+  font-size: 1.1rem; /* Adjusted size for readability */
+}
+
+.book-info-container strong {
+  color: #E8BF58; /* Color for labels */
+  
+}
+
+.separator {
+  border: 1px solid #1D3557; /* Line color */
+  margin: 100px 0; /* Spacing around the line */
+}
+
+.carousel-title {
+  text-align: center; /* Center the title */
+  margin-bottom: 15px; /* Space below the title */
+  color: rgb(8, 1, 40); /* Title color */
+  font-size: 4rem; /* Font size for the title */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Added text shadow for better visibility */
+
+}
+.book-details-container {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.book-image-container {
+  flex: 1;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.book-info-container {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.book-title {
+  margin-bottom: 50px;
+  color: #1D3557;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 140px;
+
+}
+
+.book-info-container p {
+  margin-bottom: 5px;
+  color: #1D3557;
+  font-size: 1.1rem;
+}
+
+.book-info-container strong {
+  color: #E8BF58;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button {
+  background-color: #1D3557;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #E8BF58;
+  color: #1D3557;
+}
+/* import books*/
+.import-book-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.dropzone {
+  width: 100%;
+  padding: 20px;
+  border: 2px dashed #ddd;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.dropzone p {
+  margin: 0;
+  color: #1D3557;
+}
+
+.submit-button {
+  background-color: #1D3557;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #E8BF58;
+  color: #1D3557;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.success {
+  color: green;
+  margin-top: 10px;
+}
+
+/* book search */
+.book-search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.book-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-height: 300px; /* Set a maximum height for the list */
+  overflow-y: auto; /* Add vertical scroll if content overflows */
+}
+
+
+.book-list-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+
+.book-image {
+  width: 50px;
+  height: 75px;
+  object-fit: cover;
+  margin-right: 15px;
+  border-radius: 8px;
+}
+
+.book-name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #1d3557;
+}
+
+/* Navigation bar definitions */
+.navbar {
+  padding: 0;
+}
+
+.navbar .navbar-nav .nav-link {
+  padding: 1em;
+  color: #1D3557; /* Updated to Deep Navy Blue */
+}
+
+.navbar .navbar-nav .nav-item {
+  position: relative;
+}
+
+.navbar .navbar-nav .nav-item::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  background-color: #B272CB; /* Updated to Purple */
+  width: 0;
+  margin: 0 auto;
+  height: 4px;
+  transition: all .5s;
+}
+
+.navbar .navbar-nav .nav-item:hover::after {
+  width: 100%;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #333333; /* Updated to Charcoal Gray */
+}
+
+.navbar-dark .navbar-brand {
+  color: #333333; /* Updated to Charcoal Gray */
+}
+
+ @media screen and (min-width: 992px){
+  .navbar{
+  padding: 0;
+ }
+ .navbar .navbar-nav .nav-link{
+  padding: 1em 0;
+ }
+ .navbar .navbar-nav .nav-item{
+  margin: 0 1em;
+ }
+ }
+
+  /* Hotel custom color */
+  .btn-hotel {
+    background-color: #e0bfed; /* Updated to Purple */
+    color: #FFFFFF; /* Updated to White */
+  }
+  
+  .btn-hotel:hover {
+    background-color: #1D3557; /* Deep Navy Blue on hover */
+    color: #FCA311; /* Orange text on hover */
+    transition: 0.7s;
+    outline-color: transparent;
+    outline-style: solid;
+  }
+  
+  .hotel-color {
+    color: #333333; /* Updated to Charcoal Gray */
+  }
+  
+  .book-type{
+    color:rgb(232, 191, 88);
+    font-family: 'Courier New', Courier, monospace;
+    font-size:medium;
+  }
+  .vertical-rule{
+    border-left: '0.5px solid black';
+    height: '100vh'
+  }
+  /*carousel section */
+  /* Carousel Card Styling */
+.carousel-card {
+  opacity: 0.9;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-image {
+  object-fit: cover;
+  height: 150px; /* Adjust the height as needed */
+  width: 100%;
+}
+
+/* Button Styling */
+.carousel-button {
+  background-color: #1D3557; /* Deep Navy Blue */
+  color: #FFFFFF; /* White */
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.carousel-button:hover {
+  background-color: #00B4D8; /* Vivid Cyan on hover */
+  color: #000000; /* Black text on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Optional: Button Active/Focus Effect */
+.carousel-button:active,
+.carousel-button:focus {
+  outline: 2px solid #E5E5E5; /* Light Grey outline on focus */
+}
+
+/* BookCard Text Styling */
+.carousel-book-name {
+  color: #333333; /* Charcoal Gray for Book Name */
+  font-weight: bold;
+}
+
+.carousel-book-type {
+  color: #E8BF58; /* Golden Yellow for Book Type */
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.carousel-book-size {
+  color: #4CAF50; /* Green for Book Size */
+  font-style: italic;
+}
+.carousel-card {
+  opacity: 0.9;
+  width: 183;
+  height: 275;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-image {
+  object-fit: cover;
+  height: 450px; /* Adjust the height as needed */
+  width: 40%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+  
+
+
+
+.parallax {
+  background-image: url("./assets/Images/home1.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+
+.header {
+  position: relative;
+  height: 150px;
+  background-size: cover;
+  background-image: url("./assets/Images/home.jpeg");
+  background-position: center center;
+}
+.header-title {
+  color: #E8BF58; /* Golden Yellow for header title */
+  font-size: 4rem;
+  align-content: center;
+  text-align: center; /* Center align text for better visibility */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Added text shadow for better visibility */
+
+}
+
+.parallax {
+  margin-top: 50px;
+  color: rgb(244, 238, 245); /* Light color for parallax text */
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.7); /* Darker shadow for better contrast */
+}
+
+
+.animated {
+  animation-duration: 1s;
+}
+
+.animated-texts h1 {
+  animation: fadeInDown 1s ease-in-out;
+  color: #E8BF58; /* Golden Yellow for header title */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Added text shadow for better visibility */
+
+}
+.animated-texts h3{
+  animation: fadeInDown 1s ease-in-out;
+  color: #E8BF58; /* Golden Yellow for header title */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Added text shadow for better visibility */
+
+}
+
+.animated-texts p, h1, h2 {
+  animation: fadeInUp 1s ease-in-out;
+  color: #E8BF58; /* Golden Yellow for header title */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); 
+}
+
+@keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 60% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    transform: translate3d(0,-4px,0);
+  }
+}
+
+.bounceIn {
+  animation-name: bounceIn;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -50%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 50%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+/* Header overlay */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+     transform: translate(-50%, -50%);
+    color: #E8BF58;
+    justify-content: flex-start;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Added text shadow for better visibility */
+
+  }
+
+/* The header banner */
+.header-banner {
+  background-image:  url("./assets/Images/home1.jpeg");
+   background-size: cover;
+  background-position: center;
+   position: relative;
+  height: 80vh;
+ }
+
+.header-banner {
+  position: relative;
+  height: 500px;
+}
+
+@media only screen and (max-width: 768px) {
+  .header-banner h1 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header-banner h1 {
+    font-size: 16px;
+  }
+}
+
+ .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:   #f5f5f5;
+  height: 60px;
+  text-align: center;
+}
