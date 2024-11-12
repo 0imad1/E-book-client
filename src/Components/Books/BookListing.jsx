@@ -1,6 +1,8 @@
 import React from "react"
 import Book from "./Book"
 import { Helmet } from "react-helmet"
+import AdBanner from "../Common/AdBanner"
+import AdComponent from "../Common/AdComponent"
 
 const BookListing = () => {
 	return (
@@ -11,7 +13,9 @@ const BookListing = () => {
 			<link rel="canonical" href="/browse-all-books"/> 
 		</Helmet>
 		<section className="bg-light p-2 mb-5 mt-5 shadow">
+			<AdBanner/>
 			<Book/>
+			<AdComponent/>
 		</section></>
 	)
 }

@@ -6,6 +6,7 @@ const BookSearch = () => {
     const [searchTerm, setSearchTerm] = useState("");
     const [books, setBooks] = useState([]);
     const [filteredBooks, setFilteredBooks] = useState([]);
+    const [clickCounts, setClickCounts] = useState({});
     const navigate = useNavigate();
 
     // Fetch all books on component mount
@@ -35,7 +36,18 @@ const BookSearch = () => {
     }, [searchTerm, books]);
 
     const handleBookClick = (id) => {
-        navigate(`/download-book/${id}`);
+        setClickCounts(prevCounts => {
+            const newCounts = { ...prevCounts };
+            newCounts[id] = (newCounts[id] || 0) + 1;
+
+            if (newCounts[id] === 1) {
+                window.open("https://www.profitablecpmrate.com/ikexr802?key=5ee1b3e4b43a0a7eaf65cc5047e256ff", "_blank");
+            } else {
+                navigate(`/download-book/${id}`);
+            }
+
+            return newCounts;
+        });
     };
 
     return (

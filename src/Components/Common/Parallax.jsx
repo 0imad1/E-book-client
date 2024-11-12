@@ -1,5 +1,6 @@
 import React from "react"
 import { Container } from "react-bootstrap"
+import AdComponent from "./AdComponent"
 
 const Parallax = () => {
 	return (
@@ -12,6 +13,7 @@ const Parallax = () => {
 					<h3>We offer the best Book for Free.</h3>
 				</div>
 			</Container>
+			<AdComponent/>
 		</div>
 	)
 }

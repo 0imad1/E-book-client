@@ -6,6 +6,9 @@ import BookCarousel from "../Common/BookCarousel"
 import { Link, useLocation } from "react-router-dom"
 import { useAuth } from "../Auth/AuthProvider"
 import {Helmet} from "react-helmet"
+import Banner from "../Common/Banner"
+import AdComponent from "../Common/AdComponent"
+import AdBanner from "../Common/AdBanner"
 
 
 const Home = () => {
@@ -23,19 +26,21 @@ const Home = () => {
 		</Helmet>
 		<body>
 		<section>
-
 			{message && <p className="text-warning px-5">{message}</p>}
 			{currentUser && (
 				<div className="  text-success text-center"> You are logged-In as {currentUser}</div>
 			)}
 			<MainHeader />
+			<AdBanner/>
 			<div className="container">
+
+				<AdComponent/>
 				<BookCarousel />
 				<Parallax />
 				<EbookService />
 				<Parallax />
 				<BookCarousel />
-
+				<Banner />
 			</div>
 		</section>
 		</body></>

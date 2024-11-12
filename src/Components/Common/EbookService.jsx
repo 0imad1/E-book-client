@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
 import Header from "./Header";
+import AdBanner from "./AdBanner";
 
 const EbookService = () => {
 	return (
@@ -24,6 +25,7 @@ const EbookService = () => {
 					to information, <em>consider supporting us below.</em>
 				</p>
 			</Container>
+			<AdBanner/>
 			<hr />
 		</>
 	);
