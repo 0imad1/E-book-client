@@ -11,7 +11,6 @@ import BookListing from './Components/Books/BookListing';
 import Admin from './Components/Admin/Admin';
 import Home from './Components/Home/Home';
 import DownloadBook from './Components/Books/DownloadBook';
-import ImportBook from './Components/Common/ImportBook';
 import { AuthProvider } from './Components/Auth/AuthProvider';
 import Registration from './Components/Auth/Registration';
 import Profile from './Components/Auth/Profile';
@@ -31,7 +30,6 @@ function App() {
             <Route path="/browse-all-books" element={<BookListing />} />
             <Route path="/adminPanel" element={<Admin />} />
             <Route path="/download-book/:bookId" element={<DownloadBook />} />
-            <Route path="/upload-book" element={<ImportBook />} />
             <Route path="/GJWQ" element={<Login />} />
             <Route path="/register" element={<Registration />} />
             <Route path="/profile" element={<Profile />} />
