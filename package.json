@@ -5,10 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node generateSitemap.js",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "generate-sitemap": "node generateSitemap.cjs"
+    "preview": "vite preview"
   },
   "dependencies": {
     "async": "^3.2.6",
