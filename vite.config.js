@@ -1,8 +1,14 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// Vite configuration for React
 export default defineConfig({
   plugins: [react()],
-  
+  build: {
+    rollupOptions: {
+      input: {
+        main: './index.html',
+        sitemap: './public/sitemap.xml', // Ensure sitemap is included
+      },
+    },
+  },
 });
