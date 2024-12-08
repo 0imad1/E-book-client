@@ -11,7 +11,7 @@ const EbookService = () => {
 
 				<Row className="mt-4">
 					<h4 className="text-center">
-						Original books in <span className="hotel-color"> PDFVerse - </span>
+						Original books in <span className="hotel-color"> Readly - </span>
 						<span className="gap-2"> PDF Format</span>
 					</h4>
 				</Row>

@@ -34,7 +34,7 @@ const NavBar = () => {
         <nav className="navbar navbar-expand-lg bg-body-tertiary px-5 shadow mt-5 sticky-top">
             <div className="container-fluid">
                 <Link to={"/"} className="navbar-brand" onClick={() => handleNavigationClick("/")}>
-                    <span className="hotel-color">PDFVerse</span>
+                    <span className="hotel-color">Readly</span>
                 </Link>
 
                 <button
