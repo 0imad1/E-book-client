@@ -1,2 +1,2 @@
 User-agent: *
-Allow: https://pdfversee.netlify.app/sitemap.xml
+Allow: https://readlyy.netlify.app/sitemap.xml
