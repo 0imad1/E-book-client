@@ -4,7 +4,7 @@
 
    <url>
 
-      <loc>https://readly.netlify.app/</loc>
+      <loc>https://readlyy.netlify.app/</loc>
 
       <lastmod>2024-12-07</lastmod>
 
@@ -15,7 +15,7 @@
    </url>
    <url>
 
-      <loc>https://readly.netlify.app/existing-books</loc>
+      <loc>https://readlyy.netlify.app/existing-books</loc>
 
       <lastmod>2024-12-07</lastmod>
 
@@ -25,7 +25,7 @@
 
    </url><url>
 
-      <loc>https://readly.netlify.app/browse-all-books</loc>
+      <loc>https://readlyy.netlify.app/browse-all-books</loc>
 
       <lastmod>2024-12-07</lastmod>
 
@@ -36,7 +36,7 @@
    </url>
    <url>
 
-      <loc>https://readly.netlify.app/download-book/:bookId</loc>
+      <loc>https://readlyy.netlify.app/download-book/:bookId</loc>
 
       <lastmod>2024-12-07</lastmod>
 
