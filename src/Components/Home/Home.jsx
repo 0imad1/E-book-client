@@ -21,7 +21,7 @@ const Home = () => {
 	return (
 		<><Helmet>
 			<title>Readly- A user manuals eBook library for eBook downloads</title>
-			<meta name="description" content="Readly - A user manuals eBook library for eBook downloads"/>
+			<meta name="description" content="PdfVerse - A user manuals eBook library for eBook downloads"/>
 			<link rel="canonical" href="/"/>
 		</Helmet>
 		<body>
