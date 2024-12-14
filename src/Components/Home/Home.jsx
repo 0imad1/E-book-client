@@ -20,8 +20,8 @@ const Home = () => {
 
 	return (
 		<><Helmet>
-			<title>Readly- A user manuals eBook library for eBook downloads</title>
-			<meta name="description" content="PdfVerse - A user manuals eBook library for eBook downloads"/>
+			<title>Thebookverse- A user manuals eBook library for eBook downloads</title>
+			<meta name="description" content="Thebookverse - A user manuals eBook library for eBook downloads"/>
 			<link rel="canonical" href="/"/>
 		</Helmet>
 		<body>

@@ -8,7 +8,7 @@ const Parallax = () => {
 			<Container className="text-center px-5 py-5 justify-content-center">
 				<div className="animated-texts bounceIn">
 					<h1>
-						Download Books in <span className="hotel-color">PdfVerse</span>
+						Download Books in <span className="hotel-color">Thebookverse</span>
 					</h1>
 					<h3>We offer the best Book for Free.</h3>
 				</div>

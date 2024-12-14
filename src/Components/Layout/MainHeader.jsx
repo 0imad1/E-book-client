@@ -8,7 +8,7 @@ const MainHeader = () => {
             <div className="overlay-content">
                 <div className="animated-texts">
                     <h1>
-                        Welcome to <span className="hotel-color">PdfVerse</span>
+                        Welcome to <span className="hotel-color">Thebookverse</span>
                     </h1>
                     <h4>Download any Book you want in PDF Format.</h4>
                 </div>

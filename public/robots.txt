@@ -1,2 +1,2 @@
 User-agent: *
-Allow: https://readlyy.netlify.app/sitemap.xml
+Allow: https://thebookverse.netlify.app/sitemap.xml
